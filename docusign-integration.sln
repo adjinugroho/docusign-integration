@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docusign-integration", "docusign-integration\docusign-integration.csproj", "{C5D794C3-F07C-4EB5-9E82-D11976E61562}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5D794C3-F07C-4EB5-9E82-D11976E61562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D794C3-F07C-4EB5-9E82-D11976E61562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D794C3-F07C-4EB5-9E82-D11976E61562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D794C3-F07C-4EB5-9E82-D11976E61562}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E82F4F73-8851-4EDB-A6D1-F5E976CF6CDF}
+	EndGlobalSection
+EndGlobal
