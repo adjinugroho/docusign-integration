@@ -7,4 +7,8 @@
     <RootNamespace>docusign_integration</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DocuSign.eSign.dll" Version="5.9.0" />
+  </ItemGroup>
+
 </Project>
