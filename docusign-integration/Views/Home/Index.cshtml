@@ -1,8 +1,18 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿<div>
+    <ol type="1">
+        <li>
+            Integrate DocuSign eSign to your existing apps
+            <ol type="a">
+                <li>
+                    @Html.ActionLink("Impersonate using your account", "ImpersonateSign", "DSEsign")
+                </li>
+                <li>
+                    Sign using signer account -- <small class="text-danger fst-italic fw-bold">under construction</small>
+                </li>
+            </ol>
+        </li>
+        <li>
+            Get documents information from DocuSign -- <small class="text-danger fst-italic fw-bold">under construction</small>
+        </li>
+    </ol>
 </div>

@@ -1,7 +1,10 @@
+using docusign_integration.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IDocuSignService, DocuSignService>();
 
 var app = builder.Build();
 

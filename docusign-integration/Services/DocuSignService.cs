@@ -49,10 +49,21 @@ namespace docusign_integration.Services
                     Scope_IMPERSONATION
                 };
 
+            string authPath = "";
+
+            if (CfgDocuSign.Environment.ToLower() == "production")
+            {
+                authPath = Production_OAuth_BasePath;
+            }
+            else
+            {
+                authPath = Demo_OAuth_BasePath;
+            }
+
             return dsApiClient.RequestJWTUserToken(
                 _configuration[CfgDocuSign.ClientId],
                 _configuration[CfgDocuSign.ImpersonatedUserId],
-                Demo_OAuth_BasePath,
+                authPath,
                 FileHelper.ReadFileContent(FileHelper.PrepareFullPrivateKeyFilePath(_configuration[CfgDocuSign.PrivateKeyFile])),
                 1,
                 scopes);

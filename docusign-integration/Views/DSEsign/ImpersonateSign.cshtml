@@ -1,0 +1,32 @@
+﻿@model docusign_integration.Models.DocuSignModel
+
+<form method="post" enctype="multipart/form-data" asp-controller="DSEsign" asp-action="ImpersonateSign">
+    <div class="row mb-3">
+        <label asp-for="UserName" class="col-md-2 col-form-label"></label>
+        <div class="col-md-6">
+            <input asp-for="UserName" type="text" class="form-control" required>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="UserEmail" class="col-md-2 col-form-label"></label>
+        <div class="col-md-6">
+            <input asp-for="UserEmail" type="email" class="form-control" required>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="KeyString" class="col-md-2 col-form-label"></label>
+        <div class="col-md-6">
+            <input asp-for="KeyString" type="text" class="form-control" required>
+            <small class="text-warning fst-italic fw-bold">Sign placeholder will be placed below this text</small>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="UploadFile" class="col-md-2 col-form-label"></label>
+        <div class="col-md-6">
+            <input asp-for="UploadFile" type="file" class="form-control" required>
+            <small class="text-warning fst-italic fw-bold">PDF and DOCX file only</small>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
